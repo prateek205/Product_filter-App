@@ -26,8 +26,7 @@ This is a React based **Shopping App** in which user can view the **product list
 
 ## 📸 Preview
 #### - Screenshot of Application:
-![Demo_Screenshot]()
-
+![Demo_Screenshot](https://github.com/prateek205/Product_filter-App/blob/main/public/Screenshot.png?raw=true)
 
 ## 📽️ Live Demo
 -To see the Live Demo here: https://shopping-cart-seven-blush.vercel.app/
