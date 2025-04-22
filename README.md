@@ -24,6 +24,11 @@ This is a React based **Shopping App** in which user can view the **product list
 - 🎨 CSS(for responsive layout and styling)
 - **useEffect**,**useState**,**useContext hooks**
 
+## 📸 Preview
+#### - Screenshot of Application:
+![Demo_Screenshot]()
+
+
 ## 📽️ Live Demo
 -To see the Live Demo here: https://shopping-cart-seven-blush.vercel.app/
 
