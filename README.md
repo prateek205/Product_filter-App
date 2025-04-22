@@ -29,7 +29,7 @@ This is a React based **Shopping App** in which user can view the **product list
 ![Demo_Screenshot](https://github.com/prateek205/Product_filter-App/blob/main/public/Screenshot.png?raw=true)
 
 ## 📽️ Live Demo
--To see the Live Demo here: https://shopping-cart-seven-blush.vercel.app/
+-To see the Live Demo here: https://product-filter-app-git-main-prateek205s-projects.vercel.app/
 
 ## 🧠 Code Use (React+ContextAPI)
 #### main.jsx
