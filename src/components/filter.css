@@ -1,0 +1,236 @@
+.container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  font-family: "Ubuntu", sans-serif;
+}
+.topContainer {
+  padding-bottom: 0.5%;
+}
+.sort {
+  /* border: 2px solid black; */
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.sortTitle {
+  font-size: 25px;
+  font-weight: bold;
+}
+.sortBtn {
+  margin: 0px 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: "Ubuntu", sans-serif;
+}
+.sortBtn:hover{
+  color: rgba(0, 0, 0, 0.5);
+}
+.bottomContainer {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+.left {
+  width: 20%;
+  height: 750px;
+  /* border: 2px solid black; */
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.leftFilter{
+    padding: 5px;
+}
+.filterTitleBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+.filterTitle{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.filterBtn{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 10px;
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    transition: 0.2s all ease-in-out;
+    font-family: "Ubuntu", sans-serif;
+}
+.filterBtn:hover{
+   background-color: rgba(0, 0, 0, 0.05);
+   color: black;
+}
+hr{
+    border: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.searchItem{
+  margin-top: 2%;
+}
+.searchItem input{
+  width: 100%;
+  font-size: 16px;
+  padding: 3px 5px;
+  border: none;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.filterCat{
+    margin-top: 2%;
+}
+.filterCatTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+.filterCat ul{
+    list-style: none;
+    margin-top: 2%;
+}
+.filterCat ul li{
+    font-size: 18px;
+    padding: 5px;
+}
+label{
+  cursor: pointer;
+}
+.filterCat ul li input{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.right {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 80%;
+  /* border: 2px solid black; */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.rightCards {
+  /* border: 2px solid black; */
+  box-shadow: 0px 0px 2px rgb(0, 0, 0);
+  border-radius: 2px;
+  padding: 10px;
+  width: 250px;
+  height: 360px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+}
+.cardImg {
+    /* border: 2px solid black; */
+  width: 175px;
+  height: 100%;
+  padding: 10px;
+  object-fit: contain;
+}
+.cardTitle {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: left;
+  padding: 2px 6px;
+}
+.cardDetails {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 2px 6px;
+}
+
+
+@media (max-width:1024px){
+  .right{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .filterTitleBtn{
+    flex-direction: column;
+  }
+  .filterBtn{
+    width: 100%;
+    font-size: 16px;
+  }
+  .sort{
+    justify-content: center;
+  }
+  .filterTitle{
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width:768px){
+  .right{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container{
+    padding: 0;
+  }
+  .rightCards{
+    width: 100%;
+  }
+  .left{
+    width: 40%;
+  }
+  .filterCat ul li{
+    font-size: 18px;
+  }
+  .left{
+    height: 100%;
+  }
+
+}
+
+@media (max-width:425px){
+  .right{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+  }
+  .container{
+    padding: 0;
+  }
+  .rightCards{
+    width: 100%;
+  }
+  .left{
+    width: 50%;
+  }
+  .sortTitle{
+    font-size: 16px;
+  }
+  .sortBtn{
+    font-size: 11px;
+  }
+  .cardImg{
+    width: 150px;
+    padding: 5px;
+    height: 100%;
+  }
+  .rightCards{
+    height: 100%;
+  }
+  .filterCat ul li{
+    font-size: 12px;
+  }
+
+
+}
